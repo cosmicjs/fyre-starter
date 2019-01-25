@@ -8,6 +8,13 @@ export default ({ page }) => {
 		margin: '0 auto',
 		height: '100%'
 	}
+	const text_area_style = {
+		textAlign: 'center',
+		top: '50%',
+		marginTop: -50,
+		position: 'relative',
+		height: 0
+	}
 	const text_style = {
 		fontSize: 100,
 		color: '#fff',
@@ -15,7 +22,6 @@ export default ({ page }) => {
 		top: '50%',
 		marginTop: -50,
 		position: 'relative',
-		height: 0,
 		textShadow: '3px 3px #000',
 		textTransform: 'uppercase'
 	}
@@ -28,9 +34,16 @@ export default ({ page }) => {
 	return (
 	<div>
 		<div style={image_style}>
-			<h1 style={text_style}>{page.slug !== 'home' ? page.title : 'Fyre Starter'}</h1>
+			<div style={text_area_style}>
+				<h1 style={text_style}>{page.slug !== 'home' ? page.title : 'Fyre Starter'}</h1>
+				{
+					page.slug === 'home' ?
+						<div>Use arrow keys to navigate.</div>
+					: ''
+				}
+			</div>
 		</div>
-		<div style={footer_style}>Powered by <a style={{ color: '#00AFD7', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter">Cosmic JS</a> Use arrow keys to navigate.</div>
+		<div style={footer_style}>Powered by <a style={{ color: '#00AFD7', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter">Cosmic JS</a></div>
 	</div>
 	)
 }
