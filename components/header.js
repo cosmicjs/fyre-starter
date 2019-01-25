@@ -6,34 +6,14 @@ export default ({ page }) =>
       <title>{ page.title }</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <style>
-				{`html {
-				  font-family: sans-serif;
-				}
-				body {
+				{`body {
 					margin: 0;
-					padding: 0;
-				}
-				.main, .footer {
-					padding: 0 20px 20px;
-					max-width: 960px;
-					margin: 0 auto;
-				}
-				.hero {
-					background: #29ABE2;
-					width: 100%;
-				}
-				.hero h1 {
-					margin: 0;
-					font-size: 30px;
-					padding: 30px;
-					max-width: 960px;
-					margin: 0 auto;
-				}
-				.hero h1 a {
-					color: #fff;
-					text-decoration: none;
+          padding: 0;
+          background: #000;
+          width: 100%;
+          font-family: Helvetica, sans-serif;
+          color: #fff;
 				}`}
 				</style>
     </Head>
-    <div className="hero"><h1><a href="/">Cosmic JS React Starter</a></h1></div>
   </div>
