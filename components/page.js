@@ -25,10 +25,7 @@ export default ({ page }) => {
 		textShadow: '3px 3px #000',
 		textTransform: 'uppercase'
 	}
-	const footer_style = {
-		position: 'absolute',
-		left: 10,
-		bottom: 20,
+	const description_style = {
 		textShadow: '1px 1px #000'
 	}
 	return (
@@ -38,12 +35,15 @@ export default ({ page }) => {
 				<h1 style={text_style}>{page.slug !== 'home' ? page.title : 'Fyre Starter'}</h1>
 				{
 					page.slug === 'home' ?
-						<div>Use arrow keys to navigate.</div>
+						<div>
+							<div style={{ marginBottom: 80, fontSize: 30 }}>&larr;&rarr; keys to navigate slides</div>
+							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a></div>
+							<div style={description_style}>Made with 😂 by <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
+						</div>
 					: ''
 				}
 			</div>
 		</div>
-		<div style={footer_style}>Powered by <a style={{ color: '#00AFD7', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter">Cosmic JS</a></div>
 	</div>
 	)
 }
