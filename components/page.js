@@ -20,7 +20,7 @@ export default ({ page }) => {
 		color: '#fff',
 		textAlign: 'center',
 		top: '50%',
-		marginTop: -50,
+		marginTop: -200,
 		position: 'relative',
 		textShadow: '3px 3px #000',
 		textTransform: 'uppercase'
@@ -35,10 +35,10 @@ export default ({ page }) => {
 				<h1 style={text_style}>{page.slug !== 'home' ? page.title : 'Fyre Starter'}</h1>
 				{
 					page.slug === 'home' ?
-						<div>
-							<div style={{ marginBottom: 80, fontSize: 30 }}>&larr;&rarr; keys to navigate slides</div>
-							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a></div>
-							<div style={description_style}>Made with 😂 by <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
+						<div style={description_style}>
+							<div style={{ marginBottom: 80, fontSize: 30 }}>Use &larr;&rarr; keys to navigate slides</div>
+							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a>.</div>
+							<div>Made with 😂 by <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
 						</div>
 					: ''
 				}
