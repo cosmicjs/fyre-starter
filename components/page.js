@@ -20,7 +20,7 @@ export default ({ page }) => {
 		color: '#fff',
 		textAlign: 'center',
 		top: '50%',
-		marginTop: -200,
+		marginTop: -100,
 		position: 'relative',
 		textShadow: '3px 3px #000',
 		textTransform: 'uppercase'
