@@ -19,39 +19,60 @@ class DefaultPage extends React.Component {
         if (page_loop.slug === slug)
           page = page_loop
       })
-     this.setState({ pages, page, page_index: 0 })
+      this.setState({ 
+        pages, 
+        page, 
+        page_index: 0,
+        is_mobile: window.innerWidth < 1000,
+        styles: {
+          headline_size: window.innerWidth > 1000 ? 100 : 50
+        }
+      })
     }).catch(e => {
       console.log('fuck')
     })
    
   }
+  gotToNext() {
+    const pages = this.state.pages
+    const page_index = this.state.page_index
+    let new_index = page_index + 1
+    if (new_index > (pages.length - 1))
+      new_index = 0
+    this.setState({
+      ...this.state,
+      page: pages[new_index],
+      page_index: new_index
+    })
+  }
+  gotToPrev() {
+    const pages = this.state.pages
+    const page_index = this.state.page_index
+    let new_index = page_index - 1
+    if (new_index < 0)
+      new_index = pages.length - 1
+    this.setState({
+      ...this.state,
+      page: pages[new_index],
+      page_index: new_index
+    })
+  }
   componentDidMount() {
     document.body.addEventListener('keyup', event => {
       var key = event.keyCode || event.charCode || 0;
-      const pages = this.state.pages
       if(key == 39 || key === 32) {
-        const page_index = this.state.page_index
-        let new_index = page_index + 1
-        if (new_index > (pages.length - 1))
-          new_index = 0
-        this.setState({
-          ...this.state,
-          page: pages[new_index],
-          page_index: new_index
-        })
+        this.gotToNext()
       }
       if(key == 37) {
-        const page_index = this.state.page_index
-        let new_index = page_index - 1
-        if (new_index < 0)
-          new_index = pages.length - 1
-        this.setState({
-          ...this.state,
-          page: pages[new_index],
-          page_index: new_index
-        })
+        this.gotToPrev()
       }
-    });
+    })
+  }
+  handleClick(direction) {
+    if (direction === 'next')
+      this.gotToNext()
+    else
+      this.gotToPrev()
   }
 	render() {
     if (!this.state.page)
@@ -63,7 +84,7 @@ class DefaultPage extends React.Component {
           {this.state.page.component && this.state.page.component==='404' ? (
             <PageNotFound />
           ) : (
-            <Page page={this.state.page} />
+            <Page page={this.state.page} styles={this.state.styles} is_mobile={this.state.is_mobile} handleClick={this.handleClick.bind(this)} />
           )}
         </div>
       </div>
