@@ -55,7 +55,7 @@ export default ({ page, styles, is_mobile, handleClick }) => {
 								!is_mobile &&
 								<div style={{ marginBottom: 80, fontSize: 30 }}>Use &larr;&rarr; keys to navigate slides</div>
 							}
-							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a>.</div>
+							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com/apps/fyre-starter?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a>.</div>
 							<div>Made with 😂 using <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
 						</div>
 					: ''
