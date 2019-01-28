@@ -32,21 +32,22 @@ export default ({ page, styles, is_mobile, handleClick }) => {
 		textShadow: '1px 1px #000',
 		fontSize: 100,
 		position: 'absolute',
-		width: '100%'
+		width: '100%',
+		bottom: 0
 	}
 	return (
 	<div>
 		<div style={image_style}>
+			{
+				is_mobile &&
+				<div style={arrows_style}>
+					<div style={{ float: 'left', marginLeft: 10 }} onClick={handleClick.bind(this, 'prev')}>&larr;</div>
+					<div style={{ float: 'right', marginRight: 10 }} onClick={handleClick.bind(this, 'next')}>&rarr;</div>
+					<div style={{ clear: 'both' }}/>
+				</div>
+			}
 			<div style={text_area_style}>
 				<h1 style={text_style}>{page.slug !== 'home' ? page.metadata.headline : 'Fyre Starter'}</h1>
-				{
-					is_mobile &&
-					<div style={arrows_style}>
-						<div style={{ float: 'left', marginLeft: 10 }} onClick={handleClick.bind(this, 'prev')}>&larr;</div>
-						<div style={{ float: 'right', marginRight: 10 }} onClick={handleClick.bind(this, 'next')}>&rarr;</div>
-						<div style={{ clear: 'both' }}/>
-					</div>
-				}
 				{
 					page.slug === 'home' ?
 						<div style={description_style}>
