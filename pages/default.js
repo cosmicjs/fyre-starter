@@ -25,7 +25,8 @@ class DefaultPage extends React.Component {
         page_index: 0,
         is_mobile: window.innerWidth < 1000,
         styles: {
-          headline_size: window.innerWidth > 1000 ? 100 : 50
+          headline_size: window.innerWidth > 1000 ? 100 : 50,
+          image_width: window.innerWidth > 1000 ? 2000 : 600
         }
       })
     }).catch(e => {
