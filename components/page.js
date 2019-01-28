@@ -2,7 +2,7 @@ export default ({ page }) => {
 	const image_style = {
 		position: 'absolute',
 		width: '100%',
-		backgroundImage: `url(${page.metadata.image.imgix_url}?auto=format&w=2000)`,
+		backgroundImage: `url(${page.metadata.image.imgix_url}?auto=format,compress&w=2000)`,
 		backgroundSize: 'cover',
 		backgroundPosition: 'center',
 		margin: '0 auto',
