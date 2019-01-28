@@ -38,7 +38,7 @@ export default ({ page }) => {
 						<div style={description_style}>
 							<div style={{ marginBottom: 80, fontSize: 30 }}>Use &larr;&rarr; keys to navigate slides</div>
 							<div style={{ marginBottom: 20 }}><a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Click here to create your own 🔥 fundraising presentation</a>.</div>
-							<div>Made with 😂 by <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
+							<div>Made with 😂 using <a style={{ color: '#fff', textDecoration: 'none' }} href="https://cosmicjs.com?ref=fyre-starter" target="_blank">Cosmic JS</a>.</div>
 						</div>
 					: ''
 				}
