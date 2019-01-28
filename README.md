@@ -1,18 +1,8 @@
-# React Starter
-React starter app powered by [Cosmic JS](https://cosmicjs.com) 🚀
+![Fyre Starter](https://cosmic-s3.imgix.net/25a62e20-22ba-11e9-b86c-2b85da9474de-fyre.jpeg?w=1200)
 
-## Installation
-Install via the [Cosmic CLI](https://github.com/cosmicjs/cosmic-cli).
-```bash
-npm i -g cosmic-cli
+# Fyre Starter
+A marketing deck inspired by the one described in the Hulu documentary Fyre Fraud used to raise money for fraudulent business ventures. View the presentation.
 
-# Login to your Cosmic JS account
-cosmic login
+Built with React, uses the Cosmic JS CMS with imagery provided by the Unsplash Extension.
 
-# Installs example content to a new or existing Bucket and downloads the app locally
-cosmic init react-starter
-cd react-starter
-cosmic start
-```
-## [React CMS](https://cosmicjs.com/knowledge-base/react-cms)
-Cosmic JS offers a [Headless CMS](https://cosmicjs.com/headless-cms) used to power content for your React websites and apps.
+Disclaimer: This is a joke. Please don't use it to defraud people with Ja Rule.
