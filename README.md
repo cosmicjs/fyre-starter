@@ -3,7 +3,7 @@
 # Fyre Starter
 ### [View Demo](https://fyre-starter.com)
 
-Inspired by the deck referenced in the Hulu documentary Fyre Fraud used to raise money for fraudulent business ventures. [View the presentation](https://fyre-starter.com). Has everything your pitch needs: buzzwords, glamourour imagery and Ja Rule.
+Inspired by the deck referenced in the Hulu documentary <i>Fyre Fraud</i> used to raise money for fraudulent business ventures. [View the presentation](https://fyre-starter.com). Has everything your pitch needs: buzzwords, glamourour imagery and Ja Rule.
 
 Built with React, uses the Cosmic JS CMS with imagery provided by the Unsplash Extension. [Install to your Cosmic JS Bucket here](https://cosmicjs.com/apps/fyre-starter).
 
