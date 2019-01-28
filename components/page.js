@@ -32,7 +32,7 @@ export default ({ page }) => {
 	<div>
 		<div style={image_style}>
 			<div style={text_area_style}>
-				<h1 style={text_style}>{page.slug !== 'home' ? page.title : 'Fyre Starter'}</h1>
+				<h1 style={text_style}>{page.slug !== 'home' ? page.metadata.headline : 'Fyre Starter'}</h1>
 				{
 					page.slug === 'home' ?
 						<div style={description_style}>
