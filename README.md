@@ -7,4 +7,4 @@ A marketing deck inspired by the one described in the Hulu documentary Fyre Frau
 
 Built with React, uses the Cosmic JS CMS with imagery provided by the Unsplash Extension. [Install to your Cosmic JS Bucket here](https://cosmicjs.com/apps/fyre-starter).
 
-Disclaimer: This is a joke. Please don't use it to defraud people with Ja Rule.
+Disclaimer: This is a joke. Please don't use it to defraud people with Ja Rule. :joy:
